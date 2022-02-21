@@ -22,17 +22,22 @@ void ordina(int* a, int* b, int* c)
 int main()
 {
     int x, y, z;
+    int *p1, *p2, *p3;
+
+    p1=&x;
+    p2=&y;
+    p3=&z;
 
     printf("inserire tre valori: ");
-    scanf("%d", &x);
-    scanf("%d", &y);
-    scanf("%d", &z);
+    scanf("%d", p1);
+    scanf("%d", p2);
+    scanf("%d", p3);
 
-    ordina(&x, &y, &z);
+    ordina(p1, p2, p3);
 
     printf("valori aggiornati: %d %d %d\n", x, y, z);
 
-    printf("gli indirizzi sono: %p %p %p\n", &x, &y, &z);
+    printf("gli indirizzi sono: %p %p %p\n", p1, p2, p3);
 
     return 1;
 }
