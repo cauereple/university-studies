@@ -35,7 +35,7 @@ int main()
 
     ordina(p1, p2, p3);
 
-    printf("valori aggiornati: %d %d %d\n", x, y, z);
+    printf("valori aggiornati: %d %d %d\n", *p1, *p2, *p3);
 
     printf("gli indirizzi sono: %p %p %p\n", p1, p2, p3);
 
