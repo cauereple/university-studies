@@ -32,7 +32,7 @@ void somma_vettore(int vet1[], int vet2[], int vet3[], int dim)
     int i, j, k, cont;
 
     for(i=0; i<dim; i++)
-        vet3[i]=vet1[i]+vet2[i];
+        vet3[i]=vet1[i]+vet2[i];  
 }
 
 int main(){
