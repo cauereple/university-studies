@@ -32,5 +32,7 @@ int main()
 
     printf("valori aggiornati: %d %d %d\n", x, y, z);
 
+    printf("gli indirizzi sono: %p %p %p\n", &x, &y, &z);
+
     return 1;
 }
