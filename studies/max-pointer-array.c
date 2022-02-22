@@ -8,7 +8,7 @@ void carica_vettore(int* vet, int dim)
     for(i=0; i<DIM; i++)
     {
         printf("inserire valore in posizione %d: ", i);
-        scanf("%d", vet+i);
+        scanf("%d", vet+i); //vet+i = &vet[i]
     }
 }
 
@@ -38,7 +38,7 @@ int calcola_massimo(int* vet, int dim)
             max=*(vet+i);
         else
             if(*(vet+i) > max)
-                max=*(vet+i);
+                max=*(vet+i); //*(vet+i) = v[i]
     }
 
     return max;
@@ -51,7 +51,7 @@ int main()
     int v[DIM], m;
 
     carica_vettore(&v[0], DIM);
-    visualizza_vettore(&v[0], DIM);
+    visualizza_vettore(&v[0], DIM); // &v[0] = v
     m=calcola_massimo(&v[0], DIM);
 
     printf("Il massimo è %d\n", m);
